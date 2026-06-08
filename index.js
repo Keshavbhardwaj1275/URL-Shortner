@@ -132,8 +132,7 @@ app.post("/shorten", async (req, res) => {
 
         /* Generate Short URL */
 
-        const shortUrl =
-            `http://localhost:${port}/url/${shortCode}`;
+        const shortUrl = `${process.env.BASE_URL}/url/${shortCode}`;
 
         /* Generate QR */
 
