@@ -1,19 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>URL Shortner Application</title>
-  </head>
-  <body>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Modern URL Shortener</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Theme Toggle -->
+
+    <button id="themeToggle">
+
+        🌙
+
+    </button>
+
     <div class="container">
-      <h1>URL Shortner : ShortLY</h1>
-      <input type="text" id="longUrl" placeholder="Enter URL Here" />
-      <button id="short">Short</button>
-      <a id="shortUrl"></a>
+
+        <h1>
+            🔗 URL Shortener
+        </h1>
+
+        <p class="subtitle">
+            Shorten your long URLs instantly
+        </p>
+
+        <!-- Long URL -->
+
+        <input
+            type="text"
+            id="longUrl"
+            placeholder="Paste your long URL here..."
+        >
+
+        <!-- Custom URL -->
+
+        <div class="custom-container">
+
+            <input
+                type="text"
+                id="customCode"
+                placeholder="Create your custom short name"
+            >
+
+            <div class="info-icon">
+
+                ?
+
+                <div class="tooltip">
+
+                    <h3>
+                        Custom URL
+                    </h3>
+
+                    <p>
+                        Example:
+                    </p>
+
+                    <div class="example-box">
+
+                        localhost:1234/url/keshav
+
+                    </div>
+
+                    <p>
+                        Leave empty for random code.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Button -->
+
+        <button id="short">
+
+            Shorten URL
+
+        </button>
+
+        <!-- Result -->
+
+        <div id="shortUrl"></div>
+
+        <!-- Copy -->
+
+        <button id="copyBtn">
+
+            Copy URL
+
+        </button>
+
+        <!-- Download QR -->
+
+        <button id="downloadQR">
+
+            Download QR
+
+        </button>
+
+        <!-- Analytics -->
+
+        <div id="analyticsBox"></div>
+
     </div>
 
-    <script src="./app.js"></script>
-  </body>
+    <script src="app.js"></script>
+
+</body>
+
 </html>
